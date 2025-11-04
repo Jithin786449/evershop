@@ -13,7 +13,19 @@ npm-debug.log
 .log
 coverage
 cypress
-/config
 .prettierignore
 .prettierrc
 mysqlToPostgres.js
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Vercel
+.vercel
+
+# Keep config examples but ignore local overrides
+/config/local.json
+/config/local-*.json

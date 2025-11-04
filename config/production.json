@@ -1,0 +1,54 @@
+{
+  "shop": {
+    "currency": "USD",
+    "language": "en",
+    "weightUnit": "kg",
+    "timezone": "UTC"
+  },
+  "system": {
+    "database": {
+      "host": "${DB_HOST}",
+      "port": "${DB_PORT}",
+      "database": "${DB_NAME}",
+      "user": "${DB_USER}",
+      "password": "${DB_PASSWORD}",
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    },
+    "file": {
+      "storage": "local"
+    },
+    "session": {
+      "secret": "${SESSION_SECRET}",
+      "cookieName": "evershop_session",
+      "maxAge": 86400000
+    },
+    "url": {
+      "protocol": "https",
+      "domain": "globelconnect.store",
+      "baseUrl": "https://globelconnect.store"
+    }
+  },
+  "catalog": {
+    "product": {
+      "image": {
+        "thumbnail": {
+          "width": 100,
+          "height": 100
+        },
+        "listing": {
+          "width": 300,
+          "height": 300
+        },
+        "single": {
+          "width": 500,
+          "height": 500
+        }
+      }
+    }
+  },
+  "checkout": {
+    "allowGuestCheckout": true
+  }
+}
